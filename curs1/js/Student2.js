@@ -1,0 +1,22 @@
+class Student2{
+    constructor(id,nume,varsta){
+        this.id = id;
+        this.nume = nume;
+        this.varsta = varsta;
+    }
+
+    salut(){
+        console.log(`Salut! Numele meu este ${this.nume}`)
+    }
+
+    examen(nota1, nota2){
+        this.nota1 = parseInt(nota1);
+        this.nota2 = parseInt(nota2);
+        console.log(`Am fost la examene!`)
+    }
+
+    calcMedia(){
+        let media = (this.nota1+this.nota2) / 2;
+        console.log(`Media este ${media}`);
+    }
+}
